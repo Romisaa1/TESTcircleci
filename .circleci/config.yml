@@ -23,6 +23,12 @@ jobs:
         command: echo $my-name
 
 
+workflows:
+  jobs:
+    - print-hello
+    - print-world
+    - print-name
+
 
 
 
