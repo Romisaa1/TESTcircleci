@@ -46,6 +46,8 @@ workflows:
           requires: 
            - print-hello
       - print-name
-      - import-hello
+      - import-hello:
+          requires:
+            - print-hello
 
       
