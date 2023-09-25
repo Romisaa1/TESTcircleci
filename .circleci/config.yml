@@ -7,7 +7,7 @@ commands:
 jobs:
 
   failure:
-  docker:
+    docker:
       - image: circleci/node:13.8.0
     steps:
       - run: exit 1
