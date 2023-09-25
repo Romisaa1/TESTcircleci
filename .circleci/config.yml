@@ -8,7 +8,7 @@ workflows:
 jobs:
   build:
     environment: 
-    my-name: romisaa
+      my-name: romisaa
     docker:
       - image: cimg/base:2020.01
     steps:
