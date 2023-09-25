@@ -16,17 +16,19 @@ jobs:
     docker:
       - image: cimg/base:2020.01  
     environment: 
-      my-name: "romisaa"
+      my-name: romisaa
     steps:
       - checkout
       - run: 
-        command: echo $my-name
+          command: echo $my-name
 
 
 workflows:
   jobs:
     - print-hello
-    - print-world
+    - print-world:
+        requires: 
+           - print-hello
     - print-name
 
 
